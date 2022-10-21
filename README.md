@@ -1,1 +1,1 @@
-# A nodejs project template
+# simple grpc ts
