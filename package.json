@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "description": "a basic nodejs template",
   "scripts": {
-    "dev": "bun src/main.ts",
+    "serve": "node dist/server.js",
+    "client": "node dist/client.js",
     "build": "tsc",
     "clean": "rimraf dist",
     "lint:eslint": "eslint .",
