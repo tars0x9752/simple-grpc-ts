@@ -26,7 +26,6 @@
                 with pkgs;
                 [
                   nodejs-16_x
-                  bun # for dev:run
                   grpc-tools
                 ];
 
@@ -78,15 +77,6 @@
                     --ts_out=grpc_js:"$PROTO_DEST" \
                     -I "$PROTO_SRC" \
                     "$PROTO_SRC"/*.proto
-                '';
-              }
-              {
-                # we use bun here
-                name = "dev:run";
-                category = "Dev";
-                help = "npm run dev";
-                command = ''
-                  npm run dev
                 '';
               }
               {
