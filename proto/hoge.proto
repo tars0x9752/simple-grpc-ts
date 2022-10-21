@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+message HogeRequest {
+  string name = 1;
+}
+
+message HogeResponse {
+  string result =1;
+}
+
+service Hoge {
+  rpc hello(HogeRequest) returns (HogeResponse) {};
+}
