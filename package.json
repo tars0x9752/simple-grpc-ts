@@ -17,6 +17,7 @@
     "prepublishOnly": "run-s clean build"
   },
   "dependencies": {
+    "@badrap/result": "^0.2.13",
     "@grpc/grpc-js": "^1.7.2",
     "google-protobuf": "^3.21.2"
   },
